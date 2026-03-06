@@ -1,17 +1,43 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+})
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+  weight: ["400", "500", "600"],
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+  weight: ["400", "500"],
+})
 
 export const metadata: Metadata = {
-  title: "EventHub - Event Management Platform",
+  title: "SynerX 2026 — Pakistan's Next Generation Tech Convergence",
   description:
-    "Create, manage, and register for events. Build custom registration forms and handle team registrations with payment proof uploads.",
-  generator: "v0.app",
+    "Join 2000+ innovators at SynerX 2026 for hackathons, AI challenges, startup pitches, and workshops. Register now for Pakistan's premier tech convergence event.",
+  keywords: [
+    "SynerX",
+    "tech conference",
+    "hackathon",
+    "Pakistan",
+    "AI",
+    "startup",
+    "2026",
+  ],
   icons: {
     icon: [
       {
@@ -38,7 +64,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+      </head>
+      <body
+        className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} font-body antialiased`}
+      >
         {children}
         <Analytics />
       </body>

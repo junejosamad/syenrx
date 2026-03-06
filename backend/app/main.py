@@ -28,9 +28,10 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(events.router)
-from .routers import registrations
+from .routers import registrations, landing
 app.include_router(registrations.router)
 app.include_router(form_fields.router)
+app.include_router(landing.router)
 
 @app.get("/api/health")
 def health_check():

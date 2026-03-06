@@ -1,0 +1,86 @@
+import { Speaker } from "@/types/event"
+
+export const speakers: Speaker[] = [
+    {
+        id: "speaker-1",
+        name: "Sarah Ahmed",
+        role: "AI Research Lead",
+        company: "Google DeepMind",
+        topic: "Future of Generative AI",
+        image: "/speakers/sarah.jpg",
+        bio: "Sarah leads cutting-edge research in generative AI at Google DeepMind. With over 12 years of experience in machine learning, she has published 40+ papers in top-tier conferences and holds multiple patents in neural architecture design.",
+        socials: {
+            twitter: "https://twitter.com/sarahairesearch",
+            linkedin: "https://linkedin.com/in/sarahahmed",
+            github: "https://github.com/sarahahmed",
+        },
+    },
+    {
+        id: "speaker-2",
+        name: "James Chen",
+        role: "CTO",
+        company: "ChainVerse Labs",
+        topic: "Decentralized Infrastructure",
+        image: "/speakers/james.jpg",
+        bio: "James is the CTO of ChainVerse Labs, building the next generation of decentralized infrastructure. Previously an engineering director at Coinbase, he brings a decade of blockchain expertise to the SynerX stage.",
+        socials: {
+            twitter: "https://twitter.com/jameschain",
+            linkedin: "https://linkedin.com/in/jameschen",
+            github: "https://github.com/jameschen",
+        },
+    },
+    {
+        id: "speaker-3",
+        name: "Aisha Malik",
+        role: "Design Director",
+        company: "Figma",
+        topic: "Design Systems at Scale",
+        image: "/speakers/aisha.jpg",
+        bio: "Aisha leads design systems at Figma, crafting tools used by millions of designers worldwide. She's passionate about bridging the gap between design and engineering through systematic thinking and inclusive design practices.",
+        socials: {
+            twitter: "https://twitter.com/aishadesigns",
+            linkedin: "https://linkedin.com/in/aishamalik",
+        },
+    },
+    {
+        id: "speaker-4",
+        name: "Omar Raza",
+        role: "Founder & CEO",
+        company: "NeoStack",
+        topic: "Scaling Startups in Emerging Markets",
+        image: "/speakers/omar.jpg",
+        bio: "Omar founded NeoStack, a YC-backed startup that has raised $25M to democratize tech education in emerging markets. His journey from a dorm room in Lahore to Silicon Valley is an inspiration to founders across Pakistan.",
+        socials: {
+            twitter: "https://twitter.com/omarraza",
+            linkedin: "https://linkedin.com/in/omarraza",
+            github: "https://github.com/omarraza",
+        },
+    },
+    {
+        id: "speaker-5",
+        name: "Dr. Fatima Noor",
+        role: "Robotics Professor",
+        company: "MIT",
+        topic: "Human-Robot Collaboration",
+        image: "/speakers/fatima.jpg",
+        bio: "Dr. Fatima Noor is a tenured professor at MIT specializing in human-robot interaction. Her lab has pioneered collaborative robotics systems used in healthcare and manufacturing worldwide.",
+        socials: {
+            twitter: "https://twitter.com/drfatimanoor",
+            linkedin: "https://linkedin.com/in/fatimanoor",
+        },
+    },
+    {
+        id: "speaker-6",
+        name: "Ryan Park",
+        role: "VP of Engineering",
+        company: "Vercel",
+        topic: "The Edge Computing Revolution",
+        image: "/speakers/ryan.jpg",
+        bio: "Ryan leads platform engineering at Vercel, pushing the boundaries of edge computing and serverless architecture. He's a core contributor to Next.js and a passionate advocate for developer experience.",
+        socials: {
+            twitter: "https://twitter.com/ryanpark",
+            linkedin: "https://linkedin.com/in/ryanpark",
+            github: "https://github.com/ryanpark",
+        },
+    },
+]

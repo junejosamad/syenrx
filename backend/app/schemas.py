@@ -242,3 +242,22 @@ class RegistrationResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+# ─── Landing Page (Public, no-auth) ────────────────────
+
+class LandingRegistrationCreate(BaseModel):
+    name: str
+    email: str
+    phone: Optional[str] = None
+    ticket_type: str  # "hacker" or "vip"
+
+class LandingRegistrationResponse(BaseModel):
+    id: int
+    email: str
+    ticket_type: str
+    message: str
+
+class LandingStatsResponse(BaseModel):
+    total_registrations: int
+    total_events: int
+    total_prize_pool: str
